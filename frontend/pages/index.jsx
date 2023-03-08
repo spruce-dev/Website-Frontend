@@ -1,9 +1,15 @@
+import Navbar from "@/components/Navbar"
+
 export default function Home() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-        pls work
-      </h1>
-    </>
+    <div className=" bg-blue-200 h-screen">
+      <div>
+        <Navbar />
+      </div>
+
+      <div className=" flex items-center justify-center flex-row">
+        <h1>hi</h1>
+      </div>
+    </div>
   )
 }

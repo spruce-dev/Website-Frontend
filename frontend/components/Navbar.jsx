@@ -1,17 +1,6 @@
-import { useState } from "react"
 import Link from "next/link"
 
 function Navbar() {
-    const [loginStatus, changeLoginStatus] = useState("Sign Up")
-
-    const login = () => {
-        if (loginStatus == "Sign Up") {
-            changeLoginStatus("Sign Out")
-        }
-        else {
-            changeLoginStatus("Sign Up")
-        }
-    }
 
     return (
         <>
@@ -46,9 +35,9 @@ function Navbar() {
                     </Link>
                 </li>
                 <li className="flex items-center">
-                    <Link href="" passHref>
-                    <button onClick={login} className="mx-5 p-5 px-10 border-black text-gray-200 bg-gray-800 hover:bg-green-600 transition-all rounded-xl shadow-sm">
-                        {loginStatus}
+                    <Link href="/signup" passHref>
+                    <button className="mx-5 p-5 px-10 border-black text-gray-200 bg-gray-800 hover:bg-green-600 transition-all rounded-xl shadow-sm">
+                        Sign Up
                     </button>
                     </Link>
                 </li>
